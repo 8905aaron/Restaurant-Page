@@ -1,0 +1,30 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8905aaron/Restaurant-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8905aaron/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/8905aaron/Restaurant-Page#readme",
+  "devDependencies": {
+    "babel-loader": "^8.3.0",
+    "css-loader": "^6.x.x",
+    "html-webpack-plugin": "^5.x.x",
+    "style-loader": "^3.x.x",
+    "webpack": "^5.x.x",
+    "webpack-cli": "^4.x.x",
+    "webpack-dev-server": "^4.x.x"
+  }
+}
