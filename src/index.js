@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
 
     const heading = document.createElement('h1');
-    heading.textContent = "Welcome to Aaron's Pizza Restaurant";
+    heading.textContent = "Welcome to Geoffs Pizza Restaurant";
 
     const image = document.createElement('img');
     image.src = restaurantImage;
