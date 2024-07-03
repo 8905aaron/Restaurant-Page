@@ -1,25 +1,34 @@
-import restaurantImage from './assets/restaurant.jpg';
 import './styles.css';
+import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
 document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
 
-    const heading = document.createElement('h1');
-    heading.textContent = "Welcome to Geoffs Pizza Restaurant";
+    const homeButton = document.getElementById('content');
+    const menuButton = document.getElementById('menu');
+    const contactButton = document.getElementById('contact');
 
-    const image = document.createElement('img');
-    image.src = restaurantImage;
-    image.alt = 'Gourmet Paradise Restaurant';
-    
-    const paragraph = document.createElement('p');
-    paragraph.textContent = 'Here we offer an exquisite dining experience'
+    function clearContent () {
+        content.innerHTML = '';
+    }
 
-    const imgElement = document.createElement('img');
-    imgElement.src = restaurantImage;
-    
-    content.appendChild(heading);
-    content.appendChild(image);
-    content.appendChild(paragraph);
-});
+    homeButton.addEventListener('click', () => {
+        clearContent();
+        content.appendChild(loadHome());
+    });
 
-console.log('Hello World');
+    menuButton.addEventListener('click', () => {
+        clearContent();
+        content.appendChild(loadMenu());
+    });
+
+    contactButton.addEventListener('click', () => {
+        clearContent();
+        content.appendChild(loadContact());
+    });
+
+    // load home page by default
+    content.appendChild(loadHome());
+})
